@@ -1,8 +1,10 @@
-# Time Series Anomaly Injection Library
-This library provides Python tools for injecting various types of synthetic anomalies into multivariate time series data. It can be utilized for data augmentation in anomaly detection model training, robustness testing, or generating evaluation datasets for anomaly detection algorithms.
+# Time Series Anomaly Injection Repository
+This repository provides Python tools for injecting various types of synthetic anomalies into multivariate time series data.
+It can be utilized for data augmentation in anomaly detection model training, robustness testing, or generating evaluation datasets for anomaly detection algorithms.
 
 # Overview
-This library offers flexible functionalities to inject diverse anomaly types such as `spike, flip, speedup, noise, cutoff, moving average, scale change, wander, contextual, upsidedown, and mixture` into existing time series datasets. It supports both a mode for processing entire datasets and a mode for handling pre-windowed batch data. Additionally, it includes an optional feature to apply Min-Max scaling and revert the data to its original scale after processing.
+This repository offers flexible functionalities to inject diverse anomaly types such as `spike, flip, speedup, noise, cutoff, moving average, scale change, wander, contextual, upsidedown, and mixture` into existing time series datasets.
+It supports both a mode for processing entire datasets and a mode for handling pre-windowed batch data.
 
 # Features
 - `Diverse Anomaly Types:` Supports over 10 different anomaly patterns.
