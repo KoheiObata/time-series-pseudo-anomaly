@@ -1,0 +1,34 @@
+[project]
+name = "pa_generator"
+version = "0.1.0"
+description = "A Python library for injecting various types of anomalies into time-series data."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["anomaly detection", "time series", "data augmentation", "pytorch"]
+authors = [
+  { name = "Kohei Obata", email = "obata88@sanken.osaka-u.ac.jp" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.20.0",
+  "torch>=1.9.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/KoheiObata/time-series-pseudo-anomaly" # GitHubリポジトリのURLに変更
+"Bug Tracker" = "https://github.com/KoheiObata/time-series-pseudo-anomaly/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."] # どのディレクトリでパッケージを探すか
+include = ["pa_generator*"] # パッケージの名前
