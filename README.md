@@ -1,3 +1,6 @@
+#
+This repository is part of [Robust and Explainable Detector of Time Series Anomaly via Augmenting Multiclass Pseudo-Anomalies](https://arxiv.org/abs/2505.20765) \(KDD 2025\).
+
 # Time Series Anomaly Injection Repository
 This repository provides Python tools for injecting various types of synthetic anomalies into multivariate time series data.
 It can be utilized for data augmentation in anomaly detection model training, robustness testing, or generating evaluation datasets for anomaly detection algorithms.
@@ -15,8 +18,4 @@ It supports both a mode for processing entire datasets and a mode for handling p
 - `Anomaly Mask and Labels:` Generates a mask indicating the exact locations where anomalies were injected and One-Hot encoded labels representing the anomaly type for each window.
 - `Random Anomaly Injection:` By specifying the 'random' type, anomalies are randomly selected from predefined types for injection.
 
-# Installation
-This library is written in Python and can be installed as below.
-```
-pip install
-```
+![Example of pseudo anomalies](fig/injection.png)

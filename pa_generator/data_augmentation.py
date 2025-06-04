@@ -859,8 +859,8 @@ class DataLoaderAugBatch(DataLoaderAug):
                     ]
                     if not available_anomaly_types_for_random:
                         raise RuntimeError("No anomaly types available for 'random' injection.")
-                    injected_anomaly_type = np.random.choice(available_anomaly_types_for_random)
-                    
+                    injected_anomaly_type = str(np.random.choice(available_anomaly_types_for_random))
+
                 if injected_anomaly_type == 'normal':
                     Y_inj = np.copy(current_window_np)
                     Z_inj = np.copy(current_window_np)
